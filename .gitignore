@@ -36,6 +36,7 @@
 cmake-build-*
 cmake-travis-*
 .svn
+.clang-format
 CMakeCache.txt
 CMakeFiles/*
 crash*
