@@ -1,0 +1,7 @@
+/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/CMakeFiles/edit_cache.dir
+/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/CMakeFiles/rebuild_cache.dir
+/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/src/CMakeFiles/edit_cache.dir
+/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/src/CMakeFiles/rebuild_cache.dir
+/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir
+/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/src/SimpleThreshold/CMakeFiles/edit_cache.dir
+/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/src/SimpleThreshold/CMakeFiles/rebuild_cache.dir

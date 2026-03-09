@@ -1,48 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <executable>
-    <category>MIATT.HW04.hawkidhereXXXX</category>
-    <title>make a good title here XXXX</title>
+    <category>MIATT.HW04.parthghosh</category>
+    <title>Simple Threshold Filter</title>
     <description>
-        Does something astonishing
+        Reads a 3D signed-short NIFTI image and applies a binary threshold filter.
+        Pixels whose intensity lies in [lowThreshold, highThreshold] are set to insideValue;
+        all other pixels are set to outsideValue. Output is written in NIFTI format.
+        ECE:5490 HW04 — Partho Ghosh
     </description>
-    <version>97.0</version>
-    <documentation-url></documentation-url>
-    <license></license>
-    <contributor>Hans J. Johnson</contributor>
+    <version>1.0.0</version>
+    <documentation-url>https://itk.org/ITKSoftwareGuide/html/Book2/ITKSoftwareGuide-Book2.html</documentation-url>
+    <license>Apache 2.0</license>
+    <contributor>Partho Ghosh (ECE:5490 HW04)</contributor>
+    <acknowledgements> Developed as part of ECE:5490 Multi-Dimensional Image Analysis Tools, Spring 2026, University of Iowa. Course instructor: Professor Hans Johnson. This work uses the Insight Toolkit (ITK), an open-source library for medical image analysis developed by the National Library of Medicine (NLM) and the Insight Software Consortium (ISC). Slicer Execution Model (SEM) developed by Kitware Inc. and the Slicer community (slicer.org). For understanding and help with the coding and writing Claude.ai has been used.</acknowledgements>
 
     <parameters>
-        <label>
-            Threshold Parameters
-        </label>
-        <description>
-            Parameters for..
-        </description>
+        <label>Threshold Parameters</label>
+        <description>Parameters controlling the binary threshold operation.</description>
 
         <double>
-            <name>ts</name>
-            <longflag>ts</longflag>
-            <description>unknown</description>
-            <label>A really good label</label>
-            <default>0.0625</default>
+            <name>lowThreshold</name>
+            <longflag>lowThreshold</longflag>
+            <description>Lower bound of the threshold range (inclusive). Pixels at or above this AND at or below highThreshold are set to insideValue.</description>
+            <label>Low Threshold</label>
+            <default>50.0</default>
             <constraints>
-                <minimum>.001</minimum>
-                <maximum>1</maximum>
-                <step>.001</step>
+                <minimum>-32768</minimum>
+                <maximum>32767</maximum>
+                <step>1</step>
             </constraints>
         </double>
 
-        <integer>
-            <name>numberOfIterations</name>
-            <longflag>iterations</longflag>
-            <description>Number of iterations</description>
-            <label>Iterations</label>
-            <default>1</default>
+        <double>
+            <name>highThreshold</name>
+            <longflag>highThreshold</longflag>
+            <description>Upper bound of the threshold range (inclusive). Pixels at or below this AND at or above lowThreshold are set to insideValue.</description>
+            <label>High Threshold</label>
+            <default>100.0</default>
             <constraints>
-                <minimum>1</minimum>
-                <maximum>30</maximum>
+                <minimum>-32768</minimum>
+                <maximum>32767</maximum>
                 <step>1</step>
             </constraints>
-        </integer>
+        </double>
+
+        <double>
+            <name>outsideValue</name>
+            <longflag>outsideValue</longflag>
+            <description>Value assigned to pixels outside [lowThreshold, highThreshold].</description>
+            <label>Outside Value</label>
+            <default>0.0</default>
+            <constraints>
+                <minimum>-32768</minimum>
+                <maximum>32767</maximum>
+                <step>1</step>
+            </constraints>
+        </double>
+
+        <double>
+            <name>insideValue</name>
+            <longflag>insideValue</longflag>
+            <description>Value assigned to pixels inside [lowThreshold, highThreshold].</description>
+            <label>Inside Value</label>
+            <default>255.0</default>
+            <constraints>
+                <minimum>-32768</minimum>
+                <maximum>32767</maximum>
+                <step>1</step>
+            </constraints>
+        </double>
 
     </parameters>
 
@@ -50,20 +76,19 @@
         <label>IO</label>
         <description>Input/output parameters</description>
         <image>
-            <name>input</name>
+            <name>inputVolume</name>
             <longflag>inputVolume</longflag>
             <label>Input Volume</label>
             <channel>input</channel>
-            <description>Input volume to be filtered</description>
+            <description>3D signed-short NIFTI input image to be thresholded.</description>
         </image>
         <image>
-            <name>output</name>
+            <name>outputVolume</name>
             <longflag>outputVolume</longflag>
             <label>Output Volume</label>
             <channel>output</channel>
-            <description>Output filtered</description>
+            <description>Output NIFTI image after thresholding.</description>
         </image>
     </parameters>
 
-    <-- Other parameters here -->
 </executable>
