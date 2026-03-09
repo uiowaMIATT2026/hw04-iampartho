@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named SimpleThreshold_parthghosh
+# Target rules for targets named GaussianLPF_parthghosh
 
 # Build rule for target.
-SimpleThreshold_parthghosh: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SimpleThreshold_parthghosh
-.PHONY : SimpleThreshold_parthghosh
+GaussianLPF_parthghosh: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GaussianLPF_parthghosh
+.PHONY : GaussianLPF_parthghosh
 
 # fast build rule for target.
-SimpleThreshold_parthghosh/fast:
-	$(MAKE) $(MAKESILENT) -f src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/build.make src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/build
-.PHONY : SimpleThreshold_parthghosh/fast
+GaussianLPF_parthghosh/fast:
+	$(MAKE) $(MAKESILENT) -f src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/build.make src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/build
+.PHONY : GaussianLPF_parthghosh/fast
 
 # Help Target
 help:
@@ -137,7 +137,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... SimpleThreshold_parthghosh"
+	@echo "... GaussianLPF_parthghosh"
 .PHONY : help
 
 

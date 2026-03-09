@@ -44,6 +44,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/src/SimpleThreshold/cmake_install.cmake")
+  include("/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/src/GaussianLPF/cmake_install.cmake")
 endif()
 

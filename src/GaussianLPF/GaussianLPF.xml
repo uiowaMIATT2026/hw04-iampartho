@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+    <category>MIATT.HW04.parthghosh</category>
+    <title>Gaussian Low-Pass Filter</title>
+    <description>
+        Applies a 3D recursive Gaussian low-pass filter to reduce noise in a NIFTI image.
+        The same sigma value is applied uniformly in X, Y, and Z directions.
+        Uses itk::RecursiveGaussianImageFilter. ECE:5490 HW04 — Partho Ghosh
+    </description>
+    <version>1.0.0</version>
+    <documentation-url>https://itk.org/ITKSoftwareGuide/html/Book2/ITKSoftwareGuide-Book2.html</documentation-url>
+    <license>Apache 2.0</license>
+    <contributor>Partho Ghosh (ECE:5490 HW04)</contributor>
+    <acknowledgements> Developed as part of ECE:5490 Multi-Dimensional Image Analysis Tools, Spring 2026, University of Iowa. Course instructor: Professor Hans Johnson. This work uses the Insight Toolkit (ITK), an open-source library for medical image analysis developed by the National Library of Medicine (NLM) and the Insight Software Consortium (ISC). Slicer Execution Model (SEM) developed by Kitware Inc. and the Slicer community (slicer.org). For understanding and help with the coding and writing Claude.ai has been used.</acknowledgements>
+
+
+    <parameters>
+        <label>Filter Parameters</label>
+        <description>Parameters for the Gaussian low-pass filter.</description>
+
+        <double>
+            <name>sigma</name>
+            <longflag>sigma</longflag>
+            <description>Standard deviation (sigma) of the Gaussian kernel in physical units. Applied equally in X, Y, and Z. Must be greater than 0.</description>
+            <label>Sigma</label>
+            <default>1.0</default>
+            <constraints>
+                <minimum>0.001</minimum>
+                <maximum>50.0</maximum>
+                <step>0.1</step>
+            </constraints>
+        </double>
+
+    </parameters>
+
+    <parameters>
+        <label>IO</label>
+        <description>Input/output parameters</description>
+        <image>
+            <name>inputVolume</name>
+            <longflag>inputVolume</longflag>
+            <label>Input Volume</label>
+            <channel>input</channel>
+            <description>3D NIFTI input image to be smoothed.</description>
+        </image>
+        <image>
+            <name>outputVolume</name>
+            <longflag>outputVolume</longflag>
+            <label>Output Volume</label>
+            <channel>output</channel>
+            <description>Gaussian-smoothed output NIFTI image.</description>
+        </image>
+    </parameters>
+
+</executable>
