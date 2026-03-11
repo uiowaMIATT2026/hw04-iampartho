@@ -23,6 +23,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
   "/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/src/CMakeLists.txt"
+  "/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/src/CurvatureAD/CMakeLists.txt"
   "/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/src/DOG/CMakeLists.txt"
   "/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/src/GaussianLPF/CMakeLists.txt"
   "/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/src/GradientAD/CMakeLists.txt"
@@ -216,6 +217,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/GaussianLPF/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/DOG/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/GradientAD/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/CurvatureAD/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -224,4 +226,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/DependInfo.cmake"
   "src/DOG/CMakeFiles/DOG_parthghosh.dir/DependInfo.cmake"
   "src/GradientAD/CMakeFiles/GradientAD_parthghosh.dir/DependInfo.cmake"
+  "src/CurvatureAD/CMakeFiles/CurvatureAD_parthghosh.dir/DependInfo.cmake"
   )

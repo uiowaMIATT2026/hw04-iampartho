@@ -37,6 +37,6 @@ GradientAD, with identical stability constraints (dt ≤ 0.0625 for 3D).
 
 
 
-|              Input              | Gaussian AD (Conductance=5, Time Step=0.1, Iterations=5) | Curvature AD (Conductance=5, Time Step=0.1, Iterations=5)      |
-|:-------------------------------:|:--------------------------------------------------------:|----------------------------------------------------------------|
-| ![input axial slice](input.png) |     ![corresponding output axial slice](output.png)      |                              ![corresponding output axial slice](output.png)                                  |
+|              Input              | Gaussian AD (Conductance=5, Time Step=0.1, Iterations=5) | Curvature AD (Conductance=5, Time Step=0.1, Iterations=5) |
+|:-------------------------------:|:--------------------------------------------------------:|----------------------------------------------------------|
+| ![input axial slice](input.png) |     ![corresponding output axial slice](output.png)      | ![corresponding output axial slice](output_curv.png)     |

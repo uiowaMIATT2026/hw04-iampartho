@@ -168,6 +168,19 @@ GradientAD_parthghosh/fast:
 	$(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientAD_parthghosh.dir/build.make src/GradientAD/CMakeFiles/GradientAD_parthghosh.dir/build
 .PHONY : GradientAD_parthghosh/fast
 
+#=============================================================================
+# Target rules for targets named CurvatureAD_parthghosh
+
+# Build rule for target.
+CurvatureAD_parthghosh: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CurvatureAD_parthghosh
+.PHONY : CurvatureAD_parthghosh
+
+# fast build rule for target.
+CurvatureAD_parthghosh/fast:
+	$(MAKE) $(MAKESILENT) -f src/CurvatureAD/CMakeFiles/CurvatureAD_parthghosh.dir/build.make src/CurvatureAD/CMakeFiles/CurvatureAD_parthghosh.dir/build
+.PHONY : CurvatureAD_parthghosh/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -176,6 +189,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... CurvatureAD_parthghosh"
 	@echo "... DOG_parthghosh"
 	@echo "... GaussianLPF_parthghosh"
 	@echo "... GradientAD_parthghosh"

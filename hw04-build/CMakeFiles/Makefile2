@@ -82,6 +82,7 @@ src/all: src/SimpleThreshold/all
 src/all: src/GaussianLPF/all
 src/all: src/DOG/all
 src/all: src/GradientAD/all
+src/all: src/CurvatureAD/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
@@ -89,6 +90,7 @@ src/preinstall: src/SimpleThreshold/preinstall
 src/preinstall: src/GaussianLPF/preinstall
 src/preinstall: src/DOG/preinstall
 src/preinstall: src/GradientAD/preinstall
+src/preinstall: src/CurvatureAD/preinstall
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
@@ -96,7 +98,23 @@ src/clean: src/SimpleThreshold/clean
 src/clean: src/GaussianLPF/clean
 src/clean: src/DOG/clean
 src/clean: src/GradientAD/clean
+src/clean: src/CurvatureAD/clean
 .PHONY : src/clean
+
+#=============================================================================
+# Directory level rules for directory src/CurvatureAD
+
+# Recursive "all" directory target.
+src/CurvatureAD/all: src/CurvatureAD/CMakeFiles/CurvatureAD_parthghosh.dir/all
+.PHONY : src/CurvatureAD/all
+
+# Recursive "preinstall" directory target.
+src/CurvatureAD/preinstall:
+.PHONY : src/CurvatureAD/preinstall
+
+# Recursive "clean" directory target.
+src/CurvatureAD/clean: src/CurvatureAD/CMakeFiles/CurvatureAD_parthghosh.dir/clean
+.PHONY : src/CurvatureAD/clean
 
 #=============================================================================
 # Directory level rules for directory src/DOG
@@ -165,7 +183,7 @@ src/SimpleThreshold/clean: src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthg
 src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/build.make src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/build.make src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/CMakeFiles --progress-num=10,11,12 "Built target SimpleThreshold_parthghosh"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/CMakeFiles --progress-num=13,14,15 "Built target SimpleThreshold_parthghosh"
 .PHONY : src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/all
 
 # Build rule for subdir invocation for target.
@@ -191,7 +209,7 @@ src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/clean:
 src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/build.make src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/build.make src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/CMakeFiles --progress-num=4,5,6 "Built target GaussianLPF_parthghosh"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/CMakeFiles --progress-num=7,8,9 "Built target GaussianLPF_parthghosh"
 .PHONY : src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/all
 
 # Build rule for subdir invocation for target.
@@ -217,7 +235,7 @@ src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/clean:
 src/DOG/CMakeFiles/DOG_parthghosh.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/DOG/CMakeFiles/DOG_parthghosh.dir/build.make src/DOG/CMakeFiles/DOG_parthghosh.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/DOG/CMakeFiles/DOG_parthghosh.dir/build.make src/DOG/CMakeFiles/DOG_parthghosh.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/CMakeFiles --progress-num=1,2,3 "Built target DOG_parthghosh"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/CMakeFiles --progress-num=4,5,6 "Built target DOG_parthghosh"
 .PHONY : src/DOG/CMakeFiles/DOG_parthghosh.dir/all
 
 # Build rule for subdir invocation for target.
@@ -243,7 +261,7 @@ src/DOG/CMakeFiles/DOG_parthghosh.dir/clean:
 src/GradientAD/CMakeFiles/GradientAD_parthghosh.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientAD_parthghosh.dir/build.make src/GradientAD/CMakeFiles/GradientAD_parthghosh.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientAD_parthghosh.dir/build.make src/GradientAD/CMakeFiles/GradientAD_parthghosh.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/CMakeFiles --progress-num=7,8,9 "Built target GradientAD_parthghosh"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/CMakeFiles --progress-num=10,11,12 "Built target GradientAD_parthghosh"
 .PHONY : src/GradientAD/CMakeFiles/GradientAD_parthghosh.dir/all
 
 # Build rule for subdir invocation for target.
@@ -261,6 +279,32 @@ GradientAD_parthghosh: src/GradientAD/CMakeFiles/GradientAD_parthghosh.dir/rule
 src/GradientAD/CMakeFiles/GradientAD_parthghosh.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientAD_parthghosh.dir/build.make src/GradientAD/CMakeFiles/GradientAD_parthghosh.dir/clean
 .PHONY : src/GradientAD/CMakeFiles/GradientAD_parthghosh.dir/clean
+
+#=============================================================================
+# Target rules for target src/CurvatureAD/CMakeFiles/CurvatureAD_parthghosh.dir
+
+# All Build rule for target.
+src/CurvatureAD/CMakeFiles/CurvatureAD_parthghosh.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/CurvatureAD/CMakeFiles/CurvatureAD_parthghosh.dir/build.make src/CurvatureAD/CMakeFiles/CurvatureAD_parthghosh.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CurvatureAD/CMakeFiles/CurvatureAD_parthghosh.dir/build.make src/CurvatureAD/CMakeFiles/CurvatureAD_parthghosh.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/CMakeFiles --progress-num=1,2,3 "Built target CurvatureAD_parthghosh"
+.PHONY : src/CurvatureAD/CMakeFiles/CurvatureAD_parthghosh.dir/all
+
+# Build rule for subdir invocation for target.
+src/CurvatureAD/CMakeFiles/CurvatureAD_parthghosh.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CurvatureAD/CMakeFiles/CurvatureAD_parthghosh.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/CMakeFiles 0
+.PHONY : src/CurvatureAD/CMakeFiles/CurvatureAD_parthghosh.dir/rule
+
+# Convenience name for target.
+CurvatureAD_parthghosh: src/CurvatureAD/CMakeFiles/CurvatureAD_parthghosh.dir/rule
+.PHONY : CurvatureAD_parthghosh
+
+# clean rule for target.
+src/CurvatureAD/CMakeFiles/CurvatureAD_parthghosh.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CurvatureAD/CMakeFiles/CurvatureAD_parthghosh.dir/build.make src/CurvatureAD/CMakeFiles/CurvatureAD_parthghosh.dir/clean
+.PHONY : src/CurvatureAD/CMakeFiles/CurvatureAD_parthghosh.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

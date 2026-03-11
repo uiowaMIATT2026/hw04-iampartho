@@ -47,7 +47,7 @@ Module_EXPORT char XMLModuleDescription[] =
 "    <version>1.0.0</version>\n"
 "    <documentation-url>https://itk.org/ITKSoftwareGuide/html/Book2/ITKSoftwareGuide-Book2.html</documentation-url>\n"
 "    <license>Apache 2.0</license>\n"
-"    <contributor>iampartho (ECE:5490 HW04)</contributor>\n"
+"    <contributor>Partho Ghosh (ECE:5490 HW04)</contributor>\n"
 "    <acknowledgements> Developed as part of ECE:5490 Multi-Dimensional Image Analysis Tools, Spring 2026, University of Iowa. Course instructor: Professor Hans Johnson. This work uses the Insight Toolkit (ITK), an open-source library for medical image analysis developed by the National Library of Medicine (NLM) and the Insight Software Consortium (ISC). Slicer Execution Model (SEM) developed by Kitware Inc. and the Slicer community (slicer.org). For understanding and help with the coding and writing Claude.ai has been used.</acknowledgements>\n"
 "\n"
 "    <parameters>\n"
@@ -224,9 +224,9 @@ char *GetXMLModuleDescription()
 #define GENERATE_TCLAP_PARSE \
     std::string fullDescription("Description: "); \
     fullDescription += "\n        Applies gradient-based anisotropic diffusion to a 3D NIFTI image.\n        Smooths regions of uniform intensity while preserving edges where the\n        gradient magnitude is high. Controlled by conductance, timeStep, and iterations.\n        ECE:5490 HW04 — Partho Ghosh\n"; \
-    if (!std::string("iampartho (ECE:5490 HW04)").empty()) \
+    if (!std::string("Partho Ghosh (ECE:5490 HW04)").empty()) \
       { \
-      fullDescription += "\nAuthor(s): iampartho (ECE:5490 HW04)"; \
+      fullDescription += "\nAuthor(s): Partho Ghosh (ECE:5490 HW04)"; \
       } \
     if (!std::string("Developed as part of ECE:5490 Multi-Dimensional Image Analysis Tools, Spring 2026, University of Iowa. Course instructor: Professor Hans Johnson. This work uses the Insight Toolkit (ITK), an open-source library for medical image analysis developed by the National Library of Medicine (NLM) and the Insight Software Consortium (ISC). Slicer Execution Model (SEM) developed by Kitware Inc. and the Slicer community (slicer.org). For understanding and help with the coding and writing Claude.ai has been used.").empty()) \
       { \
