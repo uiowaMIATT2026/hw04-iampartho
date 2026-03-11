@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named GaussianLPF_parthghosh
+# Target rules for targets named DOG_parthghosh
 
 # Build rule for target.
-GaussianLPF_parthghosh: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GaussianLPF_parthghosh
-.PHONY : GaussianLPF_parthghosh
+DOG_parthghosh: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DOG_parthghosh
+.PHONY : DOG_parthghosh
 
 # fast build rule for target.
-GaussianLPF_parthghosh/fast:
-	$(MAKE) $(MAKESILENT) -f src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/build.make src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/build
-.PHONY : GaussianLPF_parthghosh/fast
+DOG_parthghosh/fast:
+	$(MAKE) $(MAKESILENT) -f src/DOG/CMakeFiles/DOG_parthghosh.dir/build.make src/DOG/CMakeFiles/DOG_parthghosh.dir/build
+.PHONY : DOG_parthghosh/fast
 
 # Help Target
 help:
@@ -137,7 +137,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... GaussianLPF_parthghosh"
+	@echo "... DOG_parthghosh"
 .PHONY : help
 
 

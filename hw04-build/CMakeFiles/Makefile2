@@ -78,57 +78,57 @@ clean: src/clean
 # Directory level rules for directory src
 
 # Recursive "all" directory target.
-src/all: src/GaussianLPF/all
+src/all: src/DOG/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
-src/preinstall: src/GaussianLPF/preinstall
+src/preinstall: src/DOG/preinstall
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
-src/clean: src/GaussianLPF/clean
+src/clean: src/DOG/clean
 .PHONY : src/clean
 
 #=============================================================================
-# Directory level rules for directory src/GaussianLPF
+# Directory level rules for directory src/DOG
 
 # Recursive "all" directory target.
-src/GaussianLPF/all: src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/all
-.PHONY : src/GaussianLPF/all
+src/DOG/all: src/DOG/CMakeFiles/DOG_parthghosh.dir/all
+.PHONY : src/DOG/all
 
 # Recursive "preinstall" directory target.
-src/GaussianLPF/preinstall:
-.PHONY : src/GaussianLPF/preinstall
+src/DOG/preinstall:
+.PHONY : src/DOG/preinstall
 
 # Recursive "clean" directory target.
-src/GaussianLPF/clean: src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/clean
-.PHONY : src/GaussianLPF/clean
+src/DOG/clean: src/DOG/CMakeFiles/DOG_parthghosh.dir/clean
+.PHONY : src/DOG/clean
 
 #=============================================================================
-# Target rules for target src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir
+# Target rules for target src/DOG/CMakeFiles/DOG_parthghosh.dir
 
 # All Build rule for target.
-src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/build.make src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/build.make src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/CMakeFiles --progress-num=1,2,3 "Built target GaussianLPF_parthghosh"
-.PHONY : src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/all
+src/DOG/CMakeFiles/DOG_parthghosh.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/DOG/CMakeFiles/DOG_parthghosh.dir/build.make src/DOG/CMakeFiles/DOG_parthghosh.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/DOG/CMakeFiles/DOG_parthghosh.dir/build.make src/DOG/CMakeFiles/DOG_parthghosh.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/CMakeFiles --progress-num=1,2,3 "Built target DOG_parthghosh"
+.PHONY : src/DOG/CMakeFiles/DOG_parthghosh.dir/all
 
 # Build rule for subdir invocation for target.
-src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/rule: cmake_check_build_system
+src/DOG/CMakeFiles/DOG_parthghosh.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/DOG/CMakeFiles/DOG_parthghosh.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/CMakeFiles 0
-.PHONY : src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/rule
+.PHONY : src/DOG/CMakeFiles/DOG_parthghosh.dir/rule
 
 # Convenience name for target.
-GaussianLPF_parthghosh: src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/rule
-.PHONY : GaussianLPF_parthghosh
+DOG_parthghosh: src/DOG/CMakeFiles/DOG_parthghosh.dir/rule
+.PHONY : DOG_parthghosh
 
 # clean rule for target.
-src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/build.make src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/clean
-.PHONY : src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/clean
+src/DOG/CMakeFiles/DOG_parthghosh.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/DOG/CMakeFiles/DOG_parthghosh.dir/build.make src/DOG/CMakeFiles/DOG_parthghosh.dir/clean
+.PHONY : src/DOG/CMakeFiles/DOG_parthghosh.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

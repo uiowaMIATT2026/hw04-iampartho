@@ -23,7 +23,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
   "/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/src/CMakeLists.txt"
-  "/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/src/GaussianLPF/CMakeLists.txt"
+  "/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/src/DOG/CMakeLists.txt"
   "/nfsscratch/Users/parthghosh/miatt/ITK-build-feb/ITKConfig.cmake"
   "/nfsscratch/Users/parthghosh/miatt/ITK-build-feb/ITKConfigVersion.cmake"
   "/nfsscratch/Users/parthghosh/miatt/ITK-build-feb/ITKInternalEigen3-build/ITKInternalEigen3Config.cmake"
@@ -209,10 +209,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "ITKFactoryRegistration/itkTransformIOFactoryRegisterManager.h"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/GaussianLPF/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/DOG/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/DependInfo.cmake"
+  "src/DOG/CMakeFiles/DOG_parthghosh.dir/DependInfo.cmake"
   )

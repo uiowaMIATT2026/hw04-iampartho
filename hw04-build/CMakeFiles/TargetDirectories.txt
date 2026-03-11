@@ -2,6 +2,6 @@
 /nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/CMakeFiles/rebuild_cache.dir
 /nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/src/CMakeFiles/edit_cache.dir
 /nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/src/CMakeFiles/rebuild_cache.dir
-/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir
-/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/src/GaussianLPF/CMakeFiles/edit_cache.dir
-/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/src/GaussianLPF/CMakeFiles/rebuild_cache.dir
+/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/src/DOG/CMakeFiles/DOG_parthghosh.dir
+/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/src/DOG/CMakeFiles/edit_cache.dir
+/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/src/DOG/CMakeFiles/rebuild_cache.dir

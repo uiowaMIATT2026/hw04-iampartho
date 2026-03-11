@@ -1,3 +1,4 @@
 # Hashes of file build rules.
+95d5b7d6711c42c675c7c243a2e41416 src/DOG/DOGCLP.h
 6e0d45458867d21b9802748c0f1199de src/GaussianLPF/GaussianLPFCLP.h
 e2d69711ca628169bb844f3904d9bffc src/SimpleThreshold/SimpleThresholdCLP.h
