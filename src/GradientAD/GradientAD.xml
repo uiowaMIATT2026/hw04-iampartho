@@ -1,30 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <executable>
-    <category>MIATT.HW04.iampartho</category>
+    <category>MIATT.HW04.parthghosh</category>
     <title>Gradient Anisotropic Diffusion Filter</title>
     <description>
         Applies gradient-based anisotropic diffusion to a 3D NIFTI image.
         Smooths regions of uniform intensity while preserving edges where the
         gradient magnitude is high. Controlled by conductance, timeStep, and iterations.
-        ECE:5490 HW04 — iampartho
+        ECE:5490 HW04 — Partho Ghosh
     </description>
     <version>1.0.0</version>
     <documentation-url>https://itk.org/ITKSoftwareGuide/html/Book2/ITKSoftwareGuide-Book2.html</documentation-url>
     <license>Apache 2.0</license>
     <contributor>iampartho (ECE:5490 HW04)</contributor>
-    <acknowledgements>
-        Developed as part of ECE:5490 Medical Image Analysis, Spring 2026,
-        University of Iowa. Course instructor: Hans J. Johnson.
-        This work uses the Insight Toolkit (ITK), an open-source library for
-        medical image analysis developed by the National Library of Medicine (NLM)
-        and the Insight Software Consortium (ISC).
-        Slicer Execution Model (SEM) developed by Kitware Inc. and the
-        Slicer community (slicer.org).
-        Gradient anisotropic diffusion based on the Perona-Malik diffusion model:
-        P. Perona and J. Malik, "Scale-space and edge detection using anisotropic
-        diffusion," IEEE TPAMI, 1990. Described in Chapter 2 of the ITK Software
-        Guide, Book 2: Design and Functionality.
-    </acknowledgements>
+    <acknowledgements> Developed as part of ECE:5490 Multi-Dimensional Image Analysis Tools, Spring 2026, University of Iowa. Course instructor: Professor Hans Johnson. This work uses the Insight Toolkit (ITK), an open-source library for medical image analysis developed by the National Library of Medicine (NLM) and the Insight Software Consortium (ISC). Slicer Execution Model (SEM) developed by Kitware Inc. and the Slicer community (slicer.org). For understanding and help with the coding and writing Claude.ai has been used.</acknowledgements>
 
     <parameters>
         <label>Filter Parameters</label>

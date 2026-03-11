@@ -2,7 +2,7 @@
 
 ## Overview
 
-Gradient anisotropic diffusion (Perona-Malik diffusion) applies the PDE:
+Gradient anisotropic diffusion applies the PDE:
 
     ∂I/∂t = div[ g(|∇I|) ∇I ]
 

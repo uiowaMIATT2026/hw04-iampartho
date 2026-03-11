@@ -18,26 +18,15 @@
 
 int main(int argc, char * argv[])
 {
-  // ---------------------------------------------------------------------------
-  // 1.  Parse arguments.
-  //     Variables:  inputVolume, outputVolume, conductance, timeStep, iterations
-  // ---------------------------------------------------------------------------
+
   PARSE_ARGS;
 
-  // ---------------------------------------------------------------------------
-  // 2.  Type aliases.
-  //     GradientAnisotropicDiffusionImageFilter requires floating-point input.
-  //     We cast short → float, filter, then cast back to short for output.
-  // ---------------------------------------------------------------------------
   constexpr unsigned int Dimension = 3;
   using InputPixelType = short;
   using RealPixelType  = float;
   using InputImageType = itk::Image<InputPixelType, Dimension>;
   using RealImageType  = itk::Image<RealPixelType,  Dimension>;
 
-  // ---------------------------------------------------------------------------
-  // 3.  Read and cast to float.
-  // ---------------------------------------------------------------------------
   using ReaderType = itk::ImageFileReader<InputImageType>;
   auto reader = ReaderType::New();
   reader->SetFileName(inputVolume);
@@ -46,15 +35,7 @@ int main(int argc, char * argv[])
   auto castToReal = CastToRealType::New();
   castToReal->SetInput(reader->GetOutput());
 
-  // ---------------------------------------------------------------------------
-  // 4.  Apply gradient anisotropic diffusion.
-  //
-  //     SetConductanceParameter(K):  controls edge sensitivity.
-  //       Low K → strongly preserves edges but less smoothing.
-  //       High K → more smoothing, less edge preservation.
-  //     SetTimeStep(dt):  numerical integration step. For 3D, dt <= 1/2^(dim+1) = 0.0625.
-  //     SetNumberOfIterations(N):  each iteration diffuses the image one time step.
-  // ---------------------------------------------------------------------------
+
   using DiffusionFilterType =
     itk::GradientAnisotropicDiffusionImageFilter<RealImageType, RealImageType>;
 
@@ -69,9 +50,7 @@ int main(int argc, char * argv[])
   auto castToShort = CastToShortType::New();
   castToShort->SetInput(diffusion->GetOutput());
 
-  // ---------------------------------------------------------------------------
-  // 5.  Write output.
-  // ---------------------------------------------------------------------------
+
   using WriterType = itk::ImageFileWriter<InputImageType>;
   auto writer = WriterType::New();
   writer->SetFileName(outputVolume);
