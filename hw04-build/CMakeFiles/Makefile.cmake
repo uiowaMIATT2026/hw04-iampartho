@@ -25,6 +25,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/src/CMakeLists.txt"
   "/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/src/DOG/CMakeLists.txt"
   "/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/src/GaussianLPF/CMakeLists.txt"
+  "/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/src/GradientAD/CMakeLists.txt"
   "/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/src/SimpleThreshold/CMakeLists.txt"
   "/nfsscratch/Users/parthghosh/miatt/ITK-build-feb/ITKConfig.cmake"
   "/nfsscratch/Users/parthghosh/miatt/ITK-build-feb/ITKConfigVersion.cmake"
@@ -214,6 +215,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/SimpleThreshold/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/GaussianLPF/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/DOG/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/GradientAD/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -221,4 +223,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/DependInfo.cmake"
   "src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/DependInfo.cmake"
   "src/DOG/CMakeFiles/DOG_parthghosh.dir/DependInfo.cmake"
+  "src/GradientAD/CMakeFiles/GradientAD_parthghosh.dir/DependInfo.cmake"
   )

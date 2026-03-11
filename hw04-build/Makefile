@@ -155,6 +155,19 @@ DOG_parthghosh/fast:
 	$(MAKE) $(MAKESILENT) -f src/DOG/CMakeFiles/DOG_parthghosh.dir/build.make src/DOG/CMakeFiles/DOG_parthghosh.dir/build
 .PHONY : DOG_parthghosh/fast
 
+#=============================================================================
+# Target rules for targets named GradientAD_parthghosh
+
+# Build rule for target.
+GradientAD_parthghosh: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GradientAD_parthghosh
+.PHONY : GradientAD_parthghosh
+
+# fast build rule for target.
+GradientAD_parthghosh/fast:
+	$(MAKE) $(MAKESILENT) -f src/GradientAD/CMakeFiles/GradientAD_parthghosh.dir/build.make src/GradientAD/CMakeFiles/GradientAD_parthghosh.dir/build
+.PHONY : GradientAD_parthghosh/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +178,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... DOG_parthghosh"
 	@echo "... GaussianLPF_parthghosh"
+	@echo "... GradientAD_parthghosh"
 	@echo "... SimpleThreshold_parthghosh"
 .PHONY : help
 

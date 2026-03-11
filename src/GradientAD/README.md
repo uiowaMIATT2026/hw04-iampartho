@@ -45,3 +45,12 @@ For a CT image (Hounsfield units, higher contrast):
 
 Higher conductance is appropriate because CT edges are typically sharper and
 higher in contrast than MRI soft-tissue edges.
+
+
+## Example
+
+
+
+|              Input              | Gaussian AD (Conductance=5, Time Step=0.1, Iterations=5) |
+|:-------------------------------:|:--------------------------------------------------------:|
+| ![input axial slice](input.png) |     ![corresponding output axial slice](output.png)      |

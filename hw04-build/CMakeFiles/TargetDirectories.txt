@@ -11,3 +11,6 @@
 /nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/src/DOG/CMakeFiles/DOG_parthghosh.dir
 /nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/src/DOG/CMakeFiles/edit_cache.dir
 /nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/src/DOG/CMakeFiles/rebuild_cache.dir
+/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/src/GradientAD/CMakeFiles/GradientAD_parthghosh.dir
+/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/src/GradientAD/CMakeFiles/edit_cache.dir
+/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/src/GradientAD/CMakeFiles/rebuild_cache.dir

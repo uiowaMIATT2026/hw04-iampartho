@@ -19,7 +19,7 @@
         <description>Anisotropic diffusion parameters.</description>
 
         <double>
-            <n>conductance</n>
+            <name>conductance</name>
             <longflag>conductance</longflag>
             <description>Conductance parameter. Higher values allow more diffusion across edges. Typical range: 0.5–5.0.</description>
             <label>Conductance</label>
@@ -32,7 +32,7 @@
         </double>
 
         <double>
-            <n>timeStep</n>
+            <name>timeStep</name>
             <longflag>timeStep</longflag>
             <description>Time step per iteration. Must be small enough for numerical stability (typically 0.0625 for 3D).</description>
             <label>Time Step</label>
@@ -45,7 +45,7 @@
         </double>
 
         <integer>
-            <n>iterations</n>
+            <name>iterations</name>
             <longflag>iterations</longflag>
             <description>Number of diffusion iterations. More iterations produce stronger smoothing.</description>
             <label>Iterations</label>
@@ -63,14 +63,14 @@
         <label>IO</label>
         <description>Input/output parameters</description>
         <image>
-            <n>inputVolume</n>
+            <name>inputVolume</name>
             <longflag>inputVolume</longflag>
             <label>Input Volume</label>
             <channel>input</channel>
             <description>3D NIFTI input image.</description>
         </image>
         <image>
-            <n>outputVolume</n>
+            <name>outputVolume</name>
             <longflag>outputVolume</longflag>
             <label>Output Volume</label>
             <channel>output</channel>
