@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <executable>
     <category>MIATT.HW04.parthghosh</category>
-    <title>Gradient Anisotropic Diffusion Filter</title>
+    <title>Curvature Anisotropic Diffusion Filter</title>
     <description>
-        Applies gradient-based anisotropic diffusion to a 3D NIFTI image.
-        Smooths regions of uniform intensity while preserving edges where the
-        gradient magnitude is high. Controlled by conductance, timeStep, and iterations.
+        Applies curvature-based anisotropic diffusion to a 3D NIFTI image.
+        Smooths along iso-intensity contours (level sets) rather than across them,
+        which tends to produce cartoon-like smoothing with sharper flat regions.
+        Controlled by conductance, timeStep, and iterations.
         ECE:5490 HW04 — Partho Ghosh
     </description>
     <version>1.0.0</version>
@@ -14,6 +15,7 @@
     <contributor>Partho Ghosh (ECE:5490 HW04)</contributor>
     <acknowledgements> Developed as part of ECE:5490 Multi-Dimensional Image Analysis Tools, Spring 2026, University of Iowa. Course instructor: Professor Hans Johnson. This work uses the Insight Toolkit (ITK), an open-source library for medical image analysis developed by the National Library of Medicine (NLM) and the Insight Software Consortium (ISC). Slicer Execution Model (SEM) developed by Kitware Inc. and the Slicer community (slicer.org). For understanding and help with the coding and writing Claude.ai has been used.</acknowledgements>
 
+
     <parameters>
         <label>Filter Parameters</label>
         <description>Anisotropic diffusion parameters.</description>
@@ -21,7 +23,7 @@
         <double>
             <name>conductance</name>
             <longflag>conductance</longflag>
-            <description>Conductance parameter. Higher values allow more diffusion across edges. Typical range: 0.5–5.0.</description>
+            <description>Conductance parameter. Higher values allow more diffusion. Typical range: 0.5–5.0.</description>
             <label>Conductance</label>
             <default>2.0</default>
             <constraints>
@@ -34,7 +36,7 @@
         <double>
             <name>timeStep</name>
             <longflag>timeStep</longflag>
-            <description>Time step per iteration. Must be small enough for numerical stability (typically 0.0625 for 3D).</description>
+            <description>Time step per iteration. Must be small for numerical stability (typically 0.0625 for 3D).</description>
             <label>Time Step</label>
             <default>0.0625</default>
             <constraints>
@@ -47,7 +49,7 @@
         <integer>
             <name>iterations</name>
             <longflag>iterations</longflag>
-            <description>Number of diffusion iterations. More iterations produce stronger smoothing.</description>
+            <description>Number of diffusion iterations.</description>
             <label>Iterations</label>
             <default>5</default>
             <constraints>
@@ -74,7 +76,7 @@
             <longflag>outputVolume</longflag>
             <label>Output Volume</label>
             <channel>output</channel>
-            <description>Gradient anisotropic diffusion filtered output NIFTI image.</description>
+            <description>Curvature anisotropic diffusion filtered output NIFTI image.</description>
         </image>
     </parameters>
 
