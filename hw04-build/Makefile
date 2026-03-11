@@ -117,6 +117,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named SimpleThreshold_parthghosh
+
+# Build rule for target.
+SimpleThreshold_parthghosh: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SimpleThreshold_parthghosh
+.PHONY : SimpleThreshold_parthghosh
+
+# fast build rule for target.
+SimpleThreshold_parthghosh/fast:
+	$(MAKE) $(MAKESILENT) -f src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/build.make src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/build
+.PHONY : SimpleThreshold_parthghosh/fast
+
+#=============================================================================
+# Target rules for targets named GaussianLPF_parthghosh
+
+# Build rule for target.
+GaussianLPF_parthghosh: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GaussianLPF_parthghosh
+.PHONY : GaussianLPF_parthghosh
+
+# fast build rule for target.
+GaussianLPF_parthghosh/fast:
+	$(MAKE) $(MAKESILENT) -f src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/build.make src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/build
+.PHONY : GaussianLPF_parthghosh/fast
+
+#=============================================================================
 # Target rules for targets named DOG_parthghosh
 
 # Build rule for target.
@@ -138,6 +164,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... DOG_parthghosh"
+	@echo "... GaussianLPF_parthghosh"
+	@echo "... SimpleThreshold_parthghosh"
 .PHONY : help
 
 

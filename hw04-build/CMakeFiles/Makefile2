@@ -78,14 +78,20 @@ clean: src/clean
 # Directory level rules for directory src
 
 # Recursive "all" directory target.
+src/all: src/SimpleThreshold/all
+src/all: src/GaussianLPF/all
 src/all: src/DOG/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
+src/preinstall: src/SimpleThreshold/preinstall
+src/preinstall: src/GaussianLPF/preinstall
 src/preinstall: src/DOG/preinstall
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
+src/clean: src/SimpleThreshold/clean
+src/clean: src/GaussianLPF/clean
 src/clean: src/DOG/clean
 .PHONY : src/clean
 
@@ -103,6 +109,88 @@ src/DOG/preinstall:
 # Recursive "clean" directory target.
 src/DOG/clean: src/DOG/CMakeFiles/DOG_parthghosh.dir/clean
 .PHONY : src/DOG/clean
+
+#=============================================================================
+# Directory level rules for directory src/GaussianLPF
+
+# Recursive "all" directory target.
+src/GaussianLPF/all: src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/all
+.PHONY : src/GaussianLPF/all
+
+# Recursive "preinstall" directory target.
+src/GaussianLPF/preinstall:
+.PHONY : src/GaussianLPF/preinstall
+
+# Recursive "clean" directory target.
+src/GaussianLPF/clean: src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/clean
+.PHONY : src/GaussianLPF/clean
+
+#=============================================================================
+# Directory level rules for directory src/SimpleThreshold
+
+# Recursive "all" directory target.
+src/SimpleThreshold/all: src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/all
+.PHONY : src/SimpleThreshold/all
+
+# Recursive "preinstall" directory target.
+src/SimpleThreshold/preinstall:
+.PHONY : src/SimpleThreshold/preinstall
+
+# Recursive "clean" directory target.
+src/SimpleThreshold/clean: src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/clean
+.PHONY : src/SimpleThreshold/clean
+
+#=============================================================================
+# Target rules for target src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir
+
+# All Build rule for target.
+src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/build.make src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/build.make src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/CMakeFiles --progress-num=7,8,9 "Built target SimpleThreshold_parthghosh"
+.PHONY : src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/all
+
+# Build rule for subdir invocation for target.
+src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/CMakeFiles 0
+.PHONY : src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/rule
+
+# Convenience name for target.
+SimpleThreshold_parthghosh: src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/rule
+.PHONY : SimpleThreshold_parthghosh
+
+# clean rule for target.
+src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/build.make src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/clean
+.PHONY : src/SimpleThreshold/CMakeFiles/SimpleThreshold_parthghosh.dir/clean
+
+#=============================================================================
+# Target rules for target src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir
+
+# All Build rule for target.
+src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/build.make src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/build.make src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/CMakeFiles --progress-num=4,5,6 "Built target GaussianLPF_parthghosh"
+.PHONY : src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/all
+
+# Build rule for subdir invocation for target.
+src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/s-l011/local/vol02/p/parthghosh/hw04-iampartho/hw04-build/CMakeFiles 0
+.PHONY : src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/rule
+
+# Convenience name for target.
+GaussianLPF_parthghosh: src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/rule
+.PHONY : GaussianLPF_parthghosh
+
+# clean rule for target.
+src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/build.make src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/clean
+.PHONY : src/GaussianLPF/CMakeFiles/GaussianLPF_parthghosh.dir/clean
 
 #=============================================================================
 # Target rules for target src/DOG/CMakeFiles/DOG_parthghosh.dir

@@ -35,7 +35,6 @@ to suppress noise and choose σ2 based on the minimum feature size of interest.
 
 ## Example
 
-### My Side-by-Side Images Title
 
 
 |              Input              |       DOG Output (Sigma1=2.5, Sigma2=3.5)       |
